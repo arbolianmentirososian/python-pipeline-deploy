@@ -1,0 +1,10 @@
+# virtual environment
+venv/
+
+# files with compiled bytecode
+*.py[co]
+__pycache__/
+
+# vs code internal files
+.vscode
+
