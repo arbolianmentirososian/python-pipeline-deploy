@@ -8,3 +8,5 @@ __pycache__/
 # vs code internal files
 .vscode
 
+# sonar scanner analysis directory
+.scannerwork/
