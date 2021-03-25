@@ -13,7 +13,6 @@ RESULT=$?
 
 if [[ ${RESULT} -eq 0 ]]; then
   printf "virtual env created successfully\n"
-  pytest -v -o junit_family=xunit1 --cov-report xml:test/coverage.xml --junitxml=test/results.xml
-else
+  pytest --cov=src --cov=test --cov-report=xml:test/coverage.xml --junitxml=test/results.xml
   printf "could not start virtual env\n"
 fi
