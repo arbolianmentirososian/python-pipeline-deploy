@@ -52,4 +52,13 @@ def divide(num1, num2):
     return make_response(jsonify(response), 200)
 
 
+@app.route("/modulo/<int:num1>/<int:num2>", methods=['GET'])
+def divide(num1, num2):
+    response = {
+        "num1": num1,
+        "num2": num2,
+        "num1 % num2": num1 % num2,
+    }
+
+    return make_response(jsonify(response), 200)
 

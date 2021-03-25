@@ -1,6 +1,7 @@
 import sys
 
-sys.path.insert(0, '/var/jenkins_home/workspace/python_deployment_pipeline/src')
+# sys.path.insert(0, '/var/jenkins_home/workspace/python_deployment_pipeline/src')
+sys.path.insert(0, 'C:\\projects\\python\\python_pipeline_deploy\\src')
 
 from math_app import app
 
@@ -38,3 +39,10 @@ def test_divide():
     assert response.status_code == 200
     result = response.get_json()["num1 / num2"]
     assert result == 5
+
+
+def test_modulo():
+    response = test_client.get("/modulo/10/3")
+    assert response.status_code == 200
+    result = response.get_json()["num1 / num2"]
+    assert result == 1
