@@ -1,6 +1,6 @@
 import sys
 
-sys.path.insert(0, 'var/jenkins_home/workspace/python_deployment_pipeline/src')
+sys.path.insert(0, '/var/jenkins_home/workspace/python_deployment_pipeline/src')
 
 from math_app import app
 
