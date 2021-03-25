@@ -53,7 +53,7 @@ def divide(num1, num2):
 
 
 @app.route("/modulo/<int:num1>/<int:num2>", methods=['GET'])
-def divide(num1, num2):
+def modulo(num1, num2):
     response = {
         "num1": num1,
         "num2": num2,
