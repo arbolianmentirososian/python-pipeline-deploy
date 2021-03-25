@@ -18,7 +18,7 @@ THREADS_PER_WORKER=2
 
 source "${CURRENT_DIR}/venv/bin/activate"
 
-# RESULT=$?
+RESULT=$?
 
 if [[ ${RESULT} -eq 0 ]]; then
   printf "virtual env created successfully\n"
