@@ -10,3 +10,6 @@ __pycache__/
 
 # sonar scanner analysis directory
 .scannerwork/
+
+# pytest generated files
+.pytest_cache/
