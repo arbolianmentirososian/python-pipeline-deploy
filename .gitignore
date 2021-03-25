@@ -13,3 +13,6 @@ __pycache__/
 
 # pytest generated files
 .pytest_cache/
+
+# pytest coverage reports
+.coverage/
