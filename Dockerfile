@@ -6,6 +6,6 @@ WORKDIR /opt/python-pipeline-deploy
 COPY . .
 
 RUN python3 -m venv venv
-RUN pip3 install -r requirements.txt
+RUN /bin/bash -c "source venv/bin/activate && pip install -r requirements.txt && deactivate"
 
 CMD ["./run.sh"]
