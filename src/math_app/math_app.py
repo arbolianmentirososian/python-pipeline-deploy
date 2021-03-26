@@ -15,7 +15,6 @@ def add(num1, num2):
         "num2": num2,
         "num1 + num2": num1 + num2,
     }
-
     return make_response(jsonify(response), 200)
 
 
@@ -26,7 +25,6 @@ def subtract(num1, num2):
         "num2": num2,
         "num1 - num2": num1 - num2,
     }
-
     return make_response(jsonify(response), 200)
 
 
@@ -37,7 +35,6 @@ def multiply(num1, num2):
         "num2": num2,
         "num1 * num2": num1 * num2,
     }
-
     return make_response(jsonify(response), 200)
 
 
@@ -48,7 +45,6 @@ def divide(num1, num2):
         "num2": num2,
         "num1 / num2": num1 / num2,
     }
-
     return make_response(jsonify(response), 200)
 
 
@@ -59,6 +55,4 @@ def modulo(num1, num2):
         "num2": num2,
         "num1 % num2": num1 % num2,
     }
-
     return make_response(jsonify(response), 200)
-
