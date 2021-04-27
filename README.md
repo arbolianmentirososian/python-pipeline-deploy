@@ -29,6 +29,8 @@ There are 5 endpoints to play with:
 
     * **Code:** 200 <br />
     * **Content:** `{"num1": 50, "num2": 5, "num1 + num2": 55}`
+
+<br/><br/>
   
 * **URL**
 
@@ -55,7 +57,7 @@ There are 5 endpoints to play with:
     * **Code:** 200 <br />
     * **Content:** `{"num1": 50, "num2": 5, "num1 - num2": 45}`
 
- **URL**
+* **URL**
 
     /multiply/{num1}/{num2}
 
