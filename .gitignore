@@ -5,7 +5,7 @@ venv/
 *.py[co]
 __pycache__/
 
-# vs code internal files
+# VS code internal files
 .vscode
 
 # sonar scanner analysis directory
@@ -16,3 +16,6 @@ __pycache__/
 
 # pytest coverage reports
 .coverage
+
+# pytest results
+test/*
