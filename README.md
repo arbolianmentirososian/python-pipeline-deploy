@@ -29,8 +29,9 @@ There are 5 endpoints to play with:
 
     * **Code:** 200 <br />
     * **Content:** `{"num1": 50, "num2": 5, "num1 + num2": 55}`
-\
-\
+  
+    
+
 * **URL**
 
     /subtract/{num1}/{num2}
@@ -55,9 +56,10 @@ There are 5 endpoints to play with:
 
     * **Code:** 200 <br />
     * **Content:** `{"num1": 50, "num2": 5, "num1 - num2": 45}`
-\
-\
-* **URL**
+
+
+
+ **URL**
 
     /multiply/{num1}/{num2}
 
@@ -81,8 +83,9 @@ There are 5 endpoints to play with:
 
     * **Code:** 200 <br />
     * **Content:** `{"num1": 50, "num2": 5, "num1 * num2": 250}`
-\
-\
+  
+    
+
 * **URL**
 
     /divide/{num1}/{num2}
@@ -107,8 +110,9 @@ There are 5 endpoints to play with:
 
     * **Code:** 200 <br />
     * **Content:** `{"num1": 50, "num2": 5, "num1 / num2": 10}`
-\
-\
+  
+  
+  
 * **URL**
 
     /modulo/{num1}/{num2}
