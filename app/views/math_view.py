@@ -1,6 +1,6 @@
 from flask import jsonify, make_response
 
-from math_app import app
+from app import app
 
 
 @app.route("/", methods=["GET"])

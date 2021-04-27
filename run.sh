@@ -22,7 +22,7 @@ RESULT=$?
 
 if [[ ${RESULT} -eq 0 ]]; then
   printf "virtual env created successfully\n"
-  cd ${CURRENT_DIR}/src && gunicorn --workers=${WORKERS_NUM} --threads=${THREADS_PER_WORKER} -b 0.0.0.0:${TCP_SERVER_PORT} main:app
+  cd ${CURRENT_DIR} && gunicorn --workers=${WORKERS_NUM} --threads=${THREADS_PER_WORKER} -b 0.0.0.0:${TCP_SERVER_PORT} main:app
 else
   printf "could not start virtual env\n"
 fi

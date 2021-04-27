@@ -1,4 +1,4 @@
-from math_app import app
+from python_pipeline_app import app
 
 
 def main():

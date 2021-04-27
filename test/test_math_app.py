@@ -1,9 +1,12 @@
 import sys
+import os
 
-sys.path.insert(0, '/var/jenkins_home/workspace/python_deployment_pipeline/src')
-# sys.path.insert(0, 'C:\\projects\\python\\python_pipeline_deploy\\src')
+app_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, app_path)
 
-from math_app import app
+print(sys.path)
+
+from app import app
 
 test_client = app.test_client()
 
