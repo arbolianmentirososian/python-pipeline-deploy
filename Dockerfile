@@ -1,21 +1,21 @@
-FROM python:3.9-buster
+FROM python:3
 
 RUN useradd -m python
 
-RUN mkdir /opt/python-pipeline-deploy
-WORKDIR /opt/python-pipeline-deploy
+RUN mkdir /opt/python-app
+WORKDIR /opt/python-app
 COPY requirements.txt . 
 
-RUN python3 -m venv venv
-RUN /bin/bash -c "source venv/bin/activate && pip install -r requirements.txt && deactivate"
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN chown -R python:python /opt/python-pipeline-deploy
+RUN chown -R python:python /opt/python-app
 
 USER python
 
 RUN chmod +x run.sh
 
-EXPOSE 55555
+EXPOSE 8080
+
 CMD ["./run.sh"]
