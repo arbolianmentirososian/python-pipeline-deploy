@@ -81,7 +81,7 @@ There are 5 endpoints to play with:
 
 * **Success Response**
 
-    * **Code:** 200 <br />
+    * **Code:** 200 <br/>
     * **Content:** `{"num1": 50, "num2": 5, "num1 * num2": 250}`
   
 <br/><br/>
