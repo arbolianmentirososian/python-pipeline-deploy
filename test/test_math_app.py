@@ -4,8 +4,6 @@ import os
 app_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 sys.path.insert(0, app_path)
 
-print(sys.path)
-
 from app import app
 
 test_client = app.test_client()
