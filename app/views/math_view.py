@@ -5,6 +5,9 @@ from app import app
 
 @app.route("/", methods=["GET"])
 def hello():
+    """ Test function that returns string 'Hello, world!'.
+    It can be used to check whether application is running.
+    """
     return "Hello, world!\n"
 
 
@@ -12,10 +15,12 @@ def hello():
 def add(num1, num2):
     """Calculates the sum of two integer numbers passed into the function
 
-    :param num1: (int) first number
-    :param num2: (int) second number
-    :return (JSON) JSON response with values of passed in numbers and their sum
-
+    Args:
+        num1 (int): first number
+        num2 (int): second number
+    
+    Returns:
+        JSON: JSON containing values of passed in numbers and their sum
     """
     response = {
         "num1": num1,
@@ -29,10 +34,12 @@ def add(num1, num2):
 def subtract(num1, num2):
     """Calculates the difference of two integer numbers passed into the function
 
-    :param num1: (int) first number
-    :param num2: (int) second number
-    :return (JSON) JSON response with values of passed in numbers and their difference
-
+    Args:
+        num1 (int): first number
+        num2 (int): second number
+    
+    Returns:
+        JSON: JSON containing values of passed in numbers and their difference
     """
     response = {
         "num1": num1,
@@ -46,10 +53,12 @@ def subtract(num1, num2):
 def multiply(num1, num2):
     """Calculates the product of two integer numbers passed into the function
 
-    :param num1: (int) first number
-    :param num2: (int) second number
-    :return (JSON) JSON response with values of passed in numbers and their product
-
+    Args:
+        num1 (int): first number
+        num2 (int): second number
+    
+    Returns:
+        JSON: JSON containing values of passed in numbers and their product
     """
     response = {
         "num1": num1,
@@ -63,10 +72,12 @@ def multiply(num1, num2):
 def divide(num1, num2):
     """Calculates the quotient of two integer numbers passed into the function
 
-    :param num1: (int) first number
-    :param num2: (int) second number
-    :return (JSON) JSON response with values of passed in numbers and their quotient
-
+    Args:
+        num1 (int): first number
+        num2 (int): second number
+    
+    Returns:
+        JSON: JSON containing values of passed in numbers and their quotient
     """
     response = {
         "num1": num1,
@@ -78,11 +89,14 @@ def divide(num1, num2):
 
 @app.route("/modulo/<int:num1>/<int:num2>", methods=["GET"])
 def modulo(num1, num2):
-    """Calculates the remainder of two integer numbers passed into the function
+    """Calculates the remainder of division of two integer numbers passed into the function
 
-    :param num1: (int) first number
-    :param num2: (int) second number
-    :return (JSON) JSON response with values of passed in numbers and the remainder of their division
+    Args:
+        num1 (int): first number
+        num2 (int): second number
+    
+    Returns:
+        JSON: JSON response with values of passed in numbers and the remainder of their division
     
     """
     response = {
