@@ -12,7 +12,7 @@ RESULT=$?
 
 if [[ ${RESULT} -eq 0 ]]; then
   printf "virtual env created successfully\n"
-  pytest --cov=src --cov=test --cov-report=xml:test/coverage.xml --junitxml=test/results.xml
+  pytest --cov=src --cov=test --cov-report=xml:test/overage.xml --junitxml=test/results.xml
 else 
   printf "could not start virtual env\n"
 fi
