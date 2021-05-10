@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-TCP_SERVER_PORT=8080
+CURRENT_DIR=$(dirname $(readlink -f $0))
+TCP_SERVER_PORT=8082
 WORKERS_NUM=5
 THREADS_PER_WORKER=2
 
-gunicorn --workers=${WORKERS_NUM} --threads=${THREADS_PER_WORKER} -b 0.0.0.0:${TCP_SERVER_PORT} main:app
+cd ${CURRENT_DIR}/src && gunicorn --workers=${WORKERS_NUM} --threads=${THREADS_PER_WORKER} -b 0.0.0.0:${TCP_SERVER_PORT} main:app
